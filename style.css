@@ -71,9 +71,8 @@ body{
 }
 
 #projects{
-  background-image: url("https://th.bing.com/th/id/R.4eccc1bdffed6cb2fcc321e3aa8221f4?rik=8IEwZK9cE4vp1Q&riu=http%3a%2f%2fwallpaperswide.com%2fdownload%2fcolorful_background_4-wallpaper-1280x1280.jpg&ehk=9slm6ZIFCixv60Yd%2fFZxG4HCWveORZsV0m%2fArs5Ze7o%3d&risl=&pid=ImgRaw&r=0");
   
-  background-image: url("https://th.bing.com/th/id/R.52c3c310d6b91117ec2644e63a4fea2d?rik=lpAwMNCE%2bcE90A&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f05%2fGradient-Wallpaper-1920x1080.jpg&ehk=qO2Omwq9S0koI91f22NMgSdXIjlvZyPSi8KJndfIcY0%3d&risl=&pid=ImgRaw&r=0");
+  background-image: url("images/my_projects.jpg");
   color: white;
   background-attachment: fixed;
   background-position: center;
