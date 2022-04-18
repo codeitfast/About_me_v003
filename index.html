@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href = "button.css" rel = "stylesheet" type = "text/css">
+ 
+  <style>
+    img{
+      padding: 0px 0px;
+    }
+    body{
+      overflow-x: hidden;
+      margin: 0px;
+      background-color: #000020;
+    }
+  </style>
+</head>
+
+<body>
+  <div class = "center" id = "top">
+    <div id = "topWrap" class = "projectWrapper" style = "width: 90%; height: 100%;">
+      <img id = "topImage" src = "images/square_background.png" style = "width: 25%; height: auto;" align = "left" class = "project">
+      
+      <div>
+   
+      <div id = "image" style = "margin-left: 30px;"><h1>I'm codeitfast.</h1></div>
+      <p>I program.</p>
+      </div>
+        
+    </div>
+
+  </div>
+  <a href = "#ideology"><button>More →</button></a>
+  <!-- 
+  TODO: Add our ideology (“Move fast and break things.” - Mark Zuckerberg)
+  Simple is better
+  1 week, 1 project
+  background color pinkish-red"?
+  For the factoids, maybe a greenish background color?
+  -->
+  <div id = "ideology">
+  <div class = "center" style = "color: white; margin-left: 5%; display: block;">
+    <h1>Our Ideology</h1>
+    <blockquote>"Move fast and break things."</blockquote>
+    <blockquote>- Mark Zuckerberg</blockquote>
+
+    <h3>We believe that simple is better.</h3>
+    <!--<p class = "text">We believe that people will fill up the time they are given, no matter what. To us, having more time to do something doesn't necessarily make it better. We try to make <b>a new project every week</b>. We would rather publish an unfinished project on time than a completely finished project late.</p>
+    <p class = "text">All of this is to make sure that new projects and ideas are always flowing, and to help make our community happier.</p>-->
+    <p class = "text">We believe that deadlines for projects make them better. We have a deadline of a week for a project, making the projects more genuine, and making us more efficient with time.</p>
+    <p class = "text">We believe that motivation and creativity come in waves. After a week or two after an idea, we notice that people no longer wish to make that project.</p>
+    <p class = "text">We believe that polished projects can make programming intimidating, as well. Showing the nuts and bolts of projects can help motivate others to make their own projects. All of our projects are open source. You can find them at <b><a href = "https://replit.com/@codeitfast" style = "text-decoration: none; color: white;">replit.com/@codeitfast</a></b>.</p>
+
+    
+    <a href = "#factoids"><button style = "margin-top: 0vh;">More →</button></a>
+  </div>
+  </div> <!-- this is so that the color is the entire block, but can be moved as well -->
+  
+  <div class = "center" id = "factoids">
+    <h1 class = "header">Some facts about your device:</h1></br>
+    
+  <div class = "projectWrapper">
+    <img src = "images/lightning_all_white.svg" style = "height: 36px; width: auto;" align = "left">
+      <div class = "fact">
+        <h3 id = "power"></h3>
+        <p id = "plugged_in"></p>
+    </div>
+  </div>
+  <div class = "projectWrapper">
+    <img id = "platform" src = "images/windows_white.png" style = "height: 36px; width: auto;" align = "left" class = "project">
+    <div class = "fact">
+
+      <h3 id = "computer"></h3>
+      <p id = "browser"></p>
+    </div>
+  </div>
+    <div class = "projectWrapper">
+    <img src = "images/wifi_white.png" style = "height: 36px; width: auto;" align = "left" class = "project">
+    <div class = "fact">
+
+      <h3 id = "lang"></h3>
+      <p id = "wifi"></p>
+    </div>
+      <a href = "#projects"><button style = "margin-top: 0vh;">More →</button></a>
+  </div>
+    
+  </div>
+  <div id = "projects">
+  <div class = "center" style = "display: block; color: white; margin-left: 5%; margin-top: 0px;">
+    <h1>Some projects I have made:</h1>
+    
+
+  <a id = "link" target = "_blank" href = "" style = "display: flex; text-align: center;"><span class="text-slider-items">https://comb.codeitfast.xyz, https://runner.codeitfast.xyz, https://codeitfast.xyz</span>
+    <span><strong class="text-slider" id = "fake_type"></strong></span></a>
+  <hr/>
+  <button style = "margin-top: 0vh; transform: rotate(0deg); margin-left: -20%;">More →</button>
+  </div>
+  </div>
+  <div id = "contact_background">
+  <div id = "contact">
+    <!-- TODO: Add links in image format here instead -->
+    <h1 style = "color: white;">Contact me:</h1><hr />
+    <a target = "_blank" href = "https://replit.com/@codeitfast"><img src = "replit.svg" style = "width: 20%; height: auto;" class = "link"></a><hr class = "space">
+      <a target = "_blank" href = "https://github.com/codeitfast"><img src = "github.svg" style = "width: 20%; height: auto;" class = "link"></a>
+    <hr>
+    <a target = "_blank" href = "https://discord.gg/7aUcWKHPe9"><img src = "discord.svg" style = "width: 20%; height: auto;" class = "link"></a>
+    <hr/>
+  </div>
+  </div>
+
+
+
+    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+<script src = "detect.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="script.js"></script>
+<script>
+  if ($(".text-slider").length == 1) {
+    var typed_strings = $(".text-slider-items").text();
+    typed_strings = typed_strings
+    var typed = new Typed(".text-slider", {
+        strings: typed_strings.split(", "),
+        typeSpeed: 30,
+        loop: true,
+        backDelay: 2000,
+        backSpeed: 30,
+    });
+
+    function updateUrl(){
+      if($("#fake_type").text() == "https://comb.codeitfast.xyz"){
+        $("#link").attr('href', typed_strings.split(", ")[0])
+        $("#link").css('text-decoration', "underline")
+        $("#link").css('color', "purple")
+      }else if($("#fake_type").text() == "https://codeitfast.xyz"){
+        $("#link").attr('href', typed_strings.split(", ")[1])
+        $("#link").css('text-decoration', "underline")
+        $("#link").css('color', "purple")
+      }else if($("#fake_type").text() == "https://runner.codeitfast.xyz"){
+        $("#link").attr('href', typed_strings.split(", ")[2])
+        $("#link").css('text-decoration', "underline")
+        $("#link").css('color', "purple")
+      }else{
+        $('#link').attr('href', "")
+        $("#link").css('text-decoration', "none")
+        $("#link").css('color', "black")
+      }
+      window.requestAnimationFrame(updateUrl)
+    }
+    window.requestAnimationFrame(updateUrl)
+    
+    
+}
+</script>
+</body>
+
+</html>

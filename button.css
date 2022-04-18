@@ -1,0 +1,26 @@
+button{
+  position: absolute;
+  transform: rotate(90deg);
+  padding: 15px 10px;
+  /*border: 2px solid red;*/
+  border: 2px solid #0091ff;
+  border-radius: 5px;
+  color: white;
+  background-color: rgba(0,0,0,0);
+  transform-origin: left;
+  
+  left: 25%;
+  margin-left: calc(25%);
+  margin-top: -300px;
+  
+  word-spacing: 1px;
+  -webkit-transition: word-spacing 200ms linear, background-color 200ms linear, color 200ms linear;
+}
+
+button:hover{
+  background-color: #0091ff;
+  color: white;
+  word-spacing: 10px;
+  -webkit-transition: word-spacing 200ms linear, background-color 200ms linear, color 200ms linear;
+  cursor: pointer;
+}
